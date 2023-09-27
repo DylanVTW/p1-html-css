@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action=""></form>
+    <form action="post"></form>
     <div>
-<label for="name"></label>
-<input type="text" name="name" id="">
+        <label for="name">name:</label>
+        <input type="text" pattern="[^0-9]*" name="name" id="">
     </div>
 
     <div>
-<label for="surname"></label>
-<input type="text" name="surname">
+        <label for="surname">surname:</label>
+        <input type="text" pattern="[^0-9]*" name="surname">
     </div>
-
-
-<div>
-    <label for="age"></label>
-    <input type="text" name="age">
-</div>
-
-
-
-
 
     <div>
-        <label for="man"></label>
-        <label for="vrouw"></label>
-        
+        <label for="man">Man</label>
+        <input type="radio" checked name="man">
+        <label for="vrouw">vrouw</label>
+        <input type="radio" name="vrouw">
+
     </div>
+    <div>
+        <label for="street">Street with housenumbah:</label>
+        <input type="text" name="street">
+    </div>
+    <div>
+        <label for="postcode">Postal code:</label>
+        <input type="text" name="postalcoed">
+    </div>
+    <div>
+        <label for="city">City:</label>
+        <input type="text" name="city">
+    </div>
+    <div>
+        <label for="country">Country:</label>
+        <input type="text" placeholder="Niger" name="country">
+    </div>
+    <div>
+        <label for="bsn-number">BSN-number</label>
+        <input type="number" pattern="[1-9]{1}[0-9]{9}">
+    </div>
+    <input type="submit" value="book now">
 </body>
+
 </html>
