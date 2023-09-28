@@ -43,3 +43,27 @@ nav a {
 nav img {
   width: 5vw;
 }
+.first{
+  background-image: url(background.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.second{
+  text-align: center;
+  color: white;
+}
+.gokublack1{
+  background-color: black;
+  color: white;
+}
+footer{
+  background-color:#00a8c7;
+  text-align: center;
+  height: 5rem;
+  font-size: 20px;
+  font-family: "Goldman"
+}
+h1{
+  font-weight: bold;
+}
