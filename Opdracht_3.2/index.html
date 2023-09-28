@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <form action="post"></form>
+    <form>
     <div>
-        <label for="name">name:</label>
+        <label for="name">Voornaam:</label>
         <input type="text" pattern="[^0-9]*" name="name" id="">
     </div>
 
     <div>
-        <label for="surname">surname:</label>
+        <label for="surname">Achternaam:</label>
         <input type="text" pattern="[^0-9]*" name="surname">
     </div>
 
@@ -27,26 +27,57 @@
 
     </div>
     <div>
-        <label for="street">Street with housenumbah:</label>
+        <label for="street">Straat met huisnummer:</label>
         <input type="text" name="street">
     </div>
     <div>
-        <label for="postcode">Postal code:</label>
+        <label for="postcode">Postcode:</label>
         <input type="text" name="postalcoed">
     </div>
     <div>
-        <label for="city">City:</label>
+        <label for="city">Stad:</label>
         <input type="text" name="city">
     </div>
     <div>
-        <label for="country">Country:</label>
+        <label for="land">Land:</label>
         <input type="text" placeholder="Niger" name="country">
     </div>
     <div>
-        <label for="bsn-number">BSN-number</label>
-        <input type="number" pattern="[1-9]{1}[0-9]{9}">
+        <label for="bsn-number">BSN-nummer:</label>
+        <input type="number" pattern="[1-9]{1}[0-9]{9}" name="bsn-number">
     </div>
-    <input type="submit" value="book now">
+    <div>
+    <label for="vakantieland">Vakantieland:</label>
+    <select name="vland" id="vland">
+        <option>
+            Niger
+        </option>
+        <option>Chad</option>
+        <option>Nigeria</option>
+        <option>Egypte</option>
+    </select>
+    </div>
+        <div>
+            <label for="dvv">Datum van vertrek:</label>
+            <input type="date" min="9/28/2023" name="dvv">
+        </div>
+        <div>
+            <label for="dvt">Datum van terugkomst:</label>
+            <input type="date" min="9/29/2023" name="dvt">
+        </div>
+        <div>
+            <label for="ar">Aantal reisgenoten:</label>
+            <input type="number" min="0" name="ar">
+        </div>
+        <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" name="mail" >
+        </div>
+        <div>
+            <label for="wachtwoord">Wachtwoord:</label>
+            <input type="password" name="password">
+        </div>
+    <input type="submit" value="boek nu"></form>
 </body>
 
 </html>
