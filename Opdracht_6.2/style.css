@@ -10,6 +10,7 @@
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    max-width: 1200px;
 }
 
 .item1 {
